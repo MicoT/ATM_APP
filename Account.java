@@ -4,7 +4,7 @@
 
 
 package ATM.ATM_APP;
-
+import java.util.Random;
 import java.text.DecimalFormat;
 import java.util.*;
 
@@ -66,7 +66,15 @@ public class Account {
 
 		if ((checkingBalance - amount) >= 0) {
 			calcCheckingWithdraw(amount);
-			System.out.println("New Checking Account Balance: " + moneyFormat.format(checkingBalance));
+			Random rd = new Random(); // creating Random object
+			int[] arr = new int[1];
+			for (int i = 0; i < arr.length; i++) {
+				arr[i] = rd.nextInt();
+				System.out.println("\n---------------------------------"); // storing random integers in an array
+				System.out.println("Reference Number: "+arr[i]);
+				System.out.println("New Checking Account Balance: " + moneyFormat.format(checkingBalance)); // printing each array element
+				System.out.println("---------------------------------\n");
+			}
 		} else {
 			System.out.println("Balance Cannot be Negative." + "\n");
 		}
@@ -79,7 +87,15 @@ public class Account {
 
 		if ((savingBalance - amount) >= 0) {
 			calcSavingWithdraw(amount);
-			System.out.println("New saving Account Balance: " + moneyFormat.format(savingBalance));
+			Random rd = new Random(); // creating Random object
+			int[] arr = new int[1];
+			for (int i = 0; i < arr.length; i++) {
+				arr[i] = rd.nextInt(); // storing random integers in an array
+				System.out.println("\n---------------------------------");
+				System.out.println("Reference Tracking: "+arr[i]); // printing each array element
+				System.out.println("New saving Account Balance: " + moneyFormat.format(savingBalance));
+				System.out.println("---------------------------------\n");
+			}
 		} else {
 			System.out.println("Balance Cannot be Negative." + "\n");
 		}
@@ -92,7 +108,16 @@ public class Account {
 
 		if ((checkingBalance + amount) >= 0) {
 			calcCheckingDeposit(amount);
-			System.out.println("New Checking Account Balance: " + moneyFormat.format(checkingBalance));
+			Random rd = new Random(); // creating Random object
+			int[] arr = new int[1];
+			for (int i = 0; i < arr.length; i++) {
+				arr[i] = rd.nextInt(); // storing random integers in an array
+				System.out.println("\n---------------------------------");
+				System.out.println("Reference Tracking: "+arr[i]); // printing each array element
+				System.out.println("New Checking Account Balance: " + moneyFormat.format(checkingBalance));
+				System.out.println("---------------------------------\n");
+			}
+			
 		} else {
 			System.out.println("Balance Cannot be Negative." + "\n");
 		}
@@ -105,7 +130,15 @@ public class Account {
 
 		if ((savingBalance + amount) >= 0) {
 			calcSavingDeposit(amount);
-			System.out.println("New saving Account Balance: " + moneyFormat.format(savingBalance));
+			Random rd = new Random(); // creating Random object
+			int[] arr = new int[1];
+			for (int i = 0; i < arr.length; i++) {
+				arr[i] = rd.nextInt(); // storing random integers in an array
+				System.out.println("\n---------------------------------");
+				System.out.println("Reference Tracking: "+arr[i]); // printing each array element
+				System.out.println("New saving Account Balance: " + moneyFormat.format(savingBalance));
+				System.out.println("---------------------------------\n");
+			}
 		} else {
 			System.out.println("Balance Cannot be Negative." + "\n");
 		}
