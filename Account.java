@@ -1,12 +1,10 @@
 
 //Account
-
-
-
 package ATM.ATM_APP;
 import java.util.Random;
 import java.text.DecimalFormat;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Account {
 

@@ -1,7 +1,4 @@
 //Option Menu Class
-
-
-
 package ATM.ATM_APP;
 
 import java.text.DecimalFormat;
