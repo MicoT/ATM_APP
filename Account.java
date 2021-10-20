@@ -3,7 +3,7 @@
 
 
 
-package ATM;
+package ATM.ATM_APP;
 
 import java.text.DecimalFormat;
 import java.util.*;

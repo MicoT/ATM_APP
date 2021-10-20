@@ -2,12 +2,12 @@
 
 
 
-package ATM;
+package ATM.ATM_APP;
 
 import java.text.DecimalFormat;
-import java.text.DecimalFormatSymbols;
-import java.util.*;
+import java.util.HashMap;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class OptionMenu extends Account {
 	Scanner menuInput = new Scanner(System.in);
@@ -19,8 +19,7 @@ public class OptionMenu extends Account {
 		int x = 1;
 		do {
 			try {
-				data.put(952141, 191904);
-				data.put(989947, 71976);
+				data.put(696969, 696969);
 
 				System.out.println("Welcome to the ATM Project!");
 				System.out.println("Enter your customer Number");
